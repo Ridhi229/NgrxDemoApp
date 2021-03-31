@@ -1,0 +1,28 @@
+<div>
+  <p> User State : </p>
+  <p>Name: {{data?.name}}</p>
+  <p>Age: {{data?.age}}</p>
+
+  <div>
+    get age using async pipe : 
+    {{age$ | async}}
+  </div>
+  <form [formGroup] = "testForm">
+    <div>
+     <label>Update Age in state - </label>
+     <input type = "text" formControlName = "age">
+    </div>
+    <div>
+      <label>Test Concat map - </label>
+      <input type = "text" formControlName = "test1">
+    </div>
+    <div>
+      <label>Test Merge map - </label>
+      <input type = "text" formControlName = "test2">
+    </div>
+    <div>
+      <label>Test Switch map - </label>
+      <input type = "text" formControlName = "test3">
+    </div>
+  </form>
+</div>
